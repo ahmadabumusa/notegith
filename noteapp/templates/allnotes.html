@@ -1,0 +1,8 @@
+<h1>welcome to the Django Templates page</h1>
+
+<h1>show all notes</h1>
+
+{% for note in allnotes %}
+<a href="{%   url 'note:notedetail'  note.slug  %}">{{note}}</a>
+<br>
+{% endfor %}
